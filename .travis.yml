@@ -4,4 +4,6 @@ node_js:
   - '0.10'
   - '0.12'
   - iojs
-after_success: sed -e s,/index,index,g -e s,/dir,lib/dir,g -e s,/file,lib/file,g coverage.lcov | coveralls
+env:
+  - CODECLIMATE_REPO_TOKEN=ad704b58ce229b8889ad5fd8cfab9a59ce92f8034f3820db984e7d74e623cc05
+after_success: npm run report-coverage

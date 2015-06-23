@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "multi='spec=- mocha-lcov-reporter=coverage.lcov html-cov=coverage.html travis-cov=-' mocha -r blanket --reporter mocha-multi",
+    "patch-lcov": "sed -e s,/index,index,g -e s,/dir,lib/dir,g -e s,/file,lib/file,g coverage.lcov | tee coverage.lcov",
+    "report-coverage": "npm run patch-lcov && cat coverage.lcov | coveralls && cat coverage.lcov | codeclimate",
     "preversion": "npm test"
   },
   "keywords": [
@@ -33,6 +35,7 @@
   },
   "devDependencies": {
     "blanket": "^1.1.7",
+    "codeclimate-test-reporter": "0.0.4",
     "coveralls": "^2.11.2",
     "debug": "^2.2.0",
     "mocha": "^2.2.5",
