@@ -23,10 +23,8 @@
   "homepage": "https://github.com/claylo/yaml-include",
   "author": "claylo",
   "license": "ISC",
-  "peerDependencies": {
-    "js-yaml": "3.3.x"
-  },
   "dependencies": {
+    "js-yaml": "3.3.x",
     "lodash.assign": "^3.2.0",
     "lodash.isarray": "^3.0.3",
     "lodash.merge": "^3.3.1",
