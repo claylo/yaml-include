@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.org/claylo/yaml-include.svg?branch=master)](https://travis-ci.org/claylo/yaml-include)
 [![Coverage Status](https://coveralls.io/repos/claylo/yaml-include/badge.svg)](https://coveralls.io/r/claylo/yaml-include)
+[![Code Climate](https://codeclimate.com/github/claylo/yaml-include/badges/gpa.svg)](https://codeclimate.com/github/claylo/yaml-include)
 [![Dependency Status](https://david-dm.org/claylo/yaml-include.svg)](https://david-dm.org/claylo/yaml-include)
 [![devDependency Status](https://david-dm.org/claylo/yaml-include/dev-status.svg)](https://david-dm.org/claylo/yaml-include#info=devDependencies)
-[![NPM version](https://img.shields.io/npm/v/yaml-include.svg)](https://www.npmjs.org/package/yaml-include)
+
 
 
 This package provides support custom tags in a [YAML](http://yaml.org/) document that facilitate inclusion of external `.yaml` files, or directories of `.yaml` files. This functionality is of course frowned upon by the YAML core team, but I find YAML too damn useful as a configuration format to _not_ support inclusions. If you feel the same way, these tags will be helpful to you.
