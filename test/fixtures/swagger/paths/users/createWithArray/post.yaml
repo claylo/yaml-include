@@ -1,0 +1,20 @@
+tags:
+  - user
+summary: Creates list of users with given input array
+description: ""
+operationId: createUsersWithArrayInput
+produces:
+  - application/json
+  - application/xml
+parameters:
+  - in: body
+    name: body
+    description: List of user object
+    required: false
+    schema:
+      type: array
+      items:
+        $ref: "#/definitions/User"
+responses:
+  default:
+    description: successful operation

@@ -1,0 +1,26 @@
+tags:
+  - user
+summary: Logs user into the system
+description: ""
+operationId: loginUser
+produces:
+  - application/json
+  - application/xml
+parameters:
+  - in: query
+    name: username
+    description: The user name for login
+    required: false
+    type: string
+  - in: query
+    name: password
+    description: The password for login in clear text
+    required: false
+    type: string
+responses:
+  "200":
+    description: successful operation
+    schema:
+      type: string
+  "400":
+    description: Invalid username/password supplied

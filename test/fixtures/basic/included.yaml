@@ -1,0 +1,3 @@
+name: Fred Rogers
+geo: "Mister Rogers' Neighborhood"
+dig: !!inc/dir [ 'subdir', { ignoreTopLevelDir: false } ]

@@ -1,0 +1,27 @@
+tags:
+  - pet
+summary: Deletes a pet
+description: ""
+operationId: deletePet
+produces:
+  - application/json
+  - application/xml
+parameters:
+  - in: header
+    name: api_key
+    description: ""
+    required: true
+    type: string
+  - in: path
+    name: petId
+    description: Pet id to delete
+    required: true
+    type: integer
+    format: int64
+responses:
+  "400":
+    description: Invalid pet value
+security:
+  - petstore_auth:
+    - write_pets
+    - read_pets

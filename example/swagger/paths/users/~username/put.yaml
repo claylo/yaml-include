@@ -1,0 +1,25 @@
+tags:
+  - user
+summary: Updated user
+description: This can only be done by the logged in user.
+operationId: updateUser
+produces:
+  - application/json
+  - application/xml
+parameters:
+  - in: path
+    name: username
+    description: name that need to be deleted
+    required: true
+    type: string
+  - in: body
+    name: body
+    description: Updated user object
+    required: false
+    schema:
+      $ref: "#/definitions/User"
+responses:
+  "404":
+    description: User not found
+  "400":
+    description: Invalid user supplied

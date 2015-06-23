@@ -1,0 +1,3 @@
+--disable=0225,0006,0110,0200
+--nojsdoc
+--quiet

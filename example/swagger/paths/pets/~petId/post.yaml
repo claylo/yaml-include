@@ -1,0 +1,33 @@
+tags:
+  - pet
+summary: Updates a pet in the store with form data
+description: ""
+operationId: updatePetWithForm
+consumes:
+  - application/x-www-form-urlencoded
+produces:
+  - application/json
+  - application/xml
+parameters:
+  - in: path
+    name: petId
+    description: ID of pet that needs to be updated
+    required: true
+    type: string
+  - in: formData
+    name: name
+    description: Updated name of the pet
+    required: true
+    type: string
+  - in: formData
+    name: status
+    description: Updated status of the pet
+    required: true
+    type: string
+responses:
+  "405":
+    description: Invalid input
+security:
+  - petstore_auth:
+    - write_pets
+    - read_pets

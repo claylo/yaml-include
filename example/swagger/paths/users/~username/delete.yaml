@@ -1,0 +1,19 @@
+tags:
+  - user
+summary: Delete user
+description: This can only be done by the logged in user.
+operationId: deleteUser
+produces:
+  - application/json
+  - application/xml
+parameters:
+  - in: path
+    name: username
+    description: The name that needs to be deleted
+    required: true
+    type: string
+responses:
+  "404":
+    description: User not found
+  "400":
+    description: Invalid username supplied

@@ -1,0 +1,23 @@
+name: Options
+
+included: !!inc/dir [ 'inc', { ignoreTopLevelDir: false, ignoreIndicator: '-', variableIndicator: '_', variablePrefix: '', variableSuffix: ':' } ]
+
+shallow: !!inc/dir [ 'inc', { lowerKeys: true, allowEmpty: true, recursive: false } ]
+
+noempty: !!inc/dir [ 'inc', { recursive: false } ]
+
+ext: !!inc/dir [ 'inc', { extensions: ['.yaml', '.yml', '.data'] } ]
+
+keeptop: !!inc/dir [ 'inc', { ignoreTopLevelDir: false, allowEmpty: true } ]
+
+filearray: !!inc/dir [ ['inc/ToLower.yaml', 'inc/sub/StillUpper.yaml' ], { ignoreTopLevelDir: false } ]
+
+xlist: !!inc/dir [ 'inc', { whitelist: ['inc/_ignored/batman.yaml'], blacklist: ['inc/foo.yaml'] } ]
+
+defaults: !!inc/dir [ 'inc' ]
+
+gimme: !!inc/file inc/sub/skip.data
+
+notopsep: !!inc/dir [ 'inc', { excludeTopLevelDirSeparator: true } ]
+
+custompathsep: !!inc/dir [ 'inc', { pathSeparator: ':', ignoreTopLevelDir: false } ]

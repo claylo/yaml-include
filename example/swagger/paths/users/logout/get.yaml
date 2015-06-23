@@ -1,0 +1,11 @@
+tags:
+  - user
+summary: Logs out current logged in user session
+description: ""
+operationId: logoutUser
+produces:
+  - application/json
+  - application/xml
+responses:
+  default:
+    description: successful operation

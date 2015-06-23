@@ -1,0 +1,27 @@
+swagger: "2.0"
+info:
+  description: |
+    This is a sample server Petstore server.
+
+    [Learn about Swagger](http://swagger.wordnik.com) or join the IRC channel `#swagger` on irc.freenode.net.
+
+    For this sample, you can use the api key `special-key` to test the authorization filters
+  version: "1.0.0"
+  title: Swagger Petstore
+  termsOfService: http://helloreverb.com/terms/
+  contact:
+    name: apiteam@wordnik.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: petstore.swagger.wordnik.com
+basePath: /v2
+schemes:
+  - http
+
+paths: !!inc/dir [ 'paths' ]
+
+securityDefinitions: !!inc/file security.yaml
+
+definitions: !!inc/dir [ 'definitions', { recursive: false, allowEmpty: false }]
+

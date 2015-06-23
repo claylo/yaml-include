@@ -1,0 +1,27 @@
+# --------------------
+# OSX Files
+# --------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# --------------------
+# TextMate
+# --------------------
+.tm_properties
+
+# --------------------
+# Node Files
+# --------------------
+npm-debug.log
+/node_modules/*
+
+# --------------------
+# App Files
+# --------------------
+scratch.*
+coverage.html

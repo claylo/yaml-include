@@ -1,0 +1,2 @@
+snakes: true
+indy: !!inc/file 'subdir/snakes/indy.yaml'

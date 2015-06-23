@@ -1,0 +1,58 @@
+{
+  "name": "yaml-include",
+  "version": "1.0.0",
+  "description": "Custom YAML tag definitions to support modular YAML documents with js-yaml.",
+  "main": "index.js",
+  "scripts": {
+    "test": "multi='spec=- html-cov=coverage.html travis-cov=-' mocha -r blanket --reporter mocha-multi"
+  },
+  "keywords": [
+    "yaml",
+    "include",
+    "modular",
+    "js-yaml",
+    "js-yaml-tag"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/claylo/yaml-include.git"
+  },
+  "bugs": {
+    "url": "https://github.com/claylo/yaml-include/issues"
+  },
+  "homepage": "https://github.com/claylo/yaml-include",
+  "author": "claylo",
+  "license": "ISC",
+  "peerDependencies": {
+    "js-yaml": "3.3.x"
+  },
+  "dependencies": {
+    "lodash.assign": "^3.2.0",
+    "lodash.isarray": "^3.0.3",
+    "lodash.merge": "^3.3.1",
+    "recursive-readdir-sync": "^1.0.6"
+  },
+  "devDependencies": {
+    "debug": "^2.2.0",
+    "blanket": "^1.1.7",
+    "mocha": "^2.2.5",
+    "mocha-multi": "^0.7.1",
+    "should": "^6.0.3",
+    "travis-cov": "^0.2.5"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "index.js",
+        "lib"
+      ],
+      "data-cover-never": ["node_modules"],
+      "data-cover-reporter-options": {
+        "shortnames": true
+      }
+    },
+    "travis-cov": {
+      "threshold": 90
+    }
+  }
+}

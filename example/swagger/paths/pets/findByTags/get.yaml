@@ -1,0 +1,30 @@
+tags:
+  - pet
+summary: Finds Pets by tags
+description: Muliple tags can be provided with comma seperated strings. Use tag1, tag2, tag3 for testing.
+operationId: findPetsByTags
+produces:
+  - application/json
+  - application/xml
+parameters:
+  - in: query
+    name: tags
+    description: Tags to filter by
+    required: false
+    type: array
+    items:
+      type: string
+    collectionFormat: multi
+responses:
+  "200":
+    description: successful operation
+    schema:
+      type: array
+      items:
+        $ref: "#/definitions/Pet"
+  "400":
+    description: Invalid tag value
+security:
+  - petstore_auth:
+    - write_pets
+    - read_pets

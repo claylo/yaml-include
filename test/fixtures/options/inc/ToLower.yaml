@@ -1,0 +1,2 @@
+lowered: y
+foo: !!inc/file inc/foo.yaml
