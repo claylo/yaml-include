@@ -1,6 +1,6 @@
 {
   "name": "yaml-include",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0",
   "description": "Custom YAML tag definitions to support modular YAML documents with js-yaml.",
   "main": "index.js",
   "scripts": {
@@ -45,7 +45,9 @@
         "index.js",
         "lib"
       ],
-      "data-cover-never": ["node_modules"],
+      "data-cover-never": [
+        "node_modules"
+      ],
       "data-cover-reporter-options": {
         "shortnames": true
       }
