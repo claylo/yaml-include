@@ -25,3 +25,6 @@ npm-debug.log
 # --------------------
 scratch.*
 coverage.html
+
+.coveralls.yml
+coverage.lcov
