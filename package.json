@@ -32,9 +32,11 @@
     "recursive-readdir-sync": "^1.0.6"
   },
   "devDependencies": {
-    "debug": "^2.2.0",
     "blanket": "^1.1.7",
+    "coveralls": "^2.11.2",
+    "debug": "^2.2.0",
     "mocha": "^2.2.5",
+    "mocha-lcov-reporter": "0.0.2",
     "mocha-multi": "^0.7.1",
     "should": "^6.0.3",
     "travis-cov": "^0.2.5"

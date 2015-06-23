@@ -1,6 +1,7 @@
 # yaml-include
 
 [![Build Status](https://travis-ci.org/claylo/yaml-include.svg?branch=master)](https://travis-ci.org/claylo/yaml-include)
+[![Coverage Status](https://coveralls.io/repos/claylo/yaml-include/badge.svg)](https://coveralls.io/r/claylo/yaml-include)
 [![Dependency Status](https://david-dm.org/claylo/yaml-include.svg)](https://david-dm.org/claylo/yaml-include)
 [![devDependency Status](https://david-dm.org/claylo/yaml-include/dev-status.svg)](https://david-dm.org/claylo/yaml-include#info=devDependencies)
 [![NPM version](https://img.shields.io/npm/v/yaml-include.svg)](https://www.npmjs.org/package/yaml-include)
