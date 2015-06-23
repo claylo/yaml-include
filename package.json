@@ -1,10 +1,11 @@
 {
   "name": "yaml-include",
-  "version": "1.0.0",
+  "version": "1.0.0-rc1",
   "description": "Custom YAML tag definitions to support modular YAML documents with js-yaml.",
   "main": "index.js",
   "scripts": {
-    "test": "multi='spec=- html-cov=coverage.html travis-cov=-' mocha -r blanket --reporter mocha-multi"
+    "test": "multi='spec=- html-cov=coverage.html travis-cov=-' mocha -r blanket --reporter mocha-multi",
+    "preversion": "npm test"
   },
   "keywords": [
     "yaml",
