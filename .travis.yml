@@ -4,4 +4,4 @@ node_js:
   - '0.10'
   - '0.12'
   - iojs
-script: npm run test-on-travis
+after_success: sed -e s,/index,index,g -e s,/dir,lib/dir,g -e s,/file,lib/file,g coverage.lcov | coveralls
