@@ -27,21 +27,21 @@
   "author": "claylo",
   "license": "ISC",
   "dependencies": {
-    "js-yaml": "3.3.x",
+    "js-yaml": "^3.4.2",
     "lodash.assign": "^3.2.0",
-    "lodash.isarray": "^3.0.3",
-    "lodash.merge": "^3.3.1",
+    "lodash.isarray": "^3.0.4",
+    "lodash.merge": "^3.3.2",
     "recursive-readdir-sync": "^1.0.6"
   },
   "devDependencies": {
     "blanket": "^1.1.7",
-    "codeclimate-test-reporter": "0.0.4",
+    "codeclimate-test-reporter": "0.1.1",
     "coveralls": "^2.11.2",
     "debug": "^2.2.0",
     "mocha": "^2.2.5",
-    "mocha-lcov-reporter": "0.0.2",
+    "mocha-lcov-reporter": "1.0.0",
     "mocha-multi": "^0.7.1",
-    "should": "^6.0.3",
+    "should": "^7.1.0",
     "travis-cov": "^0.2.5"
   },
   "config": {
