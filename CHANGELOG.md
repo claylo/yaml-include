@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Pass filename value to `yaml.load` to make problems easier to track down.
 - Add a change log ala [Keep A Changelog](http://keepachangelog.com)
+- Add a [Commitizen](http://commitizen.github.io/cz-cli) badge to the README.
 
 [Full Changelog](https://github.com/claylo/yaml-include/compare/v1.0.0...HEAD)
 

@@ -5,6 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/claylo/yaml-include/badges/gpa.svg)](https://codeclimate.com/github/claylo/yaml-include)
 [![Dependency Status](https://david-dm.org/claylo/yaml-include.svg)](https://david-dm.org/claylo/yaml-include)
 [![devDependency Status](https://david-dm.org/claylo/yaml-include/dev-status.svg)](https://david-dm.org/claylo/yaml-include#info=devDependencies)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 
 
