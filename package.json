@@ -7,7 +7,8 @@
     "test": "multi='spec=- mocha-lcov-reporter=coverage.lcov html-cov=coverage.html travis-cov=-' mocha -r blanket --reporter mocha-multi",
     "patch-lcov": "sed -e s,/index,index,g -e s,/dir,lib/dir,g -e s,/file,lib/file,g coverage.lcov | tee coverage.lcov",
     "report-coverage": "npm run patch-lcov && cat coverage.lcov | coveralls && cat coverage.lcov | codeclimate",
-    "preversion": "npm test"
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "yaml",
