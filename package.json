@@ -27,6 +27,7 @@
   "author": "claylo",
   "license": "ISC",
   "dependencies": {
+    "debug": "^2.2.0",
     "js-yaml": "^3.4.2",
     "lodash.assign": "^3.2.0",
     "lodash.isarray": "^3.0.4",
@@ -37,7 +38,6 @@
     "blanket": "^1.1.7",
     "codeclimate-test-reporter": "0.1.1",
     "coveralls": "^2.11.2",
-    "debug": "^2.2.0",
     "mocha": "^2.2.5",
     "mocha-lcov-reporter": "1.0.0",
     "mocha-multi": "^0.7.1",
