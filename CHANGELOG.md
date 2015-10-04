@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Chores completed
 - Update dependencies.
 - Add a [Commitizen](http://commitizen.github.io/cz-cli) badge to the README.
+- Add postversion script for automated goodness.
 
 
 [Full Changelog](https://github.com/claylo/yaml-include/compare/v1.0.0...HEAD)
