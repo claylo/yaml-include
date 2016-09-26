@@ -19,7 +19,7 @@
 
   describe('yaml-include', function() {
 
-    var basicFixture, optionsFixture, swaggerFixture, src;
+    var basicFixture, optionsFixture, swaggerFixture, issue4Fixture, src;
 
     before(function() {
       process.chdir(__dirname + '/fixtures/basic');
@@ -33,6 +33,10 @@
       process.chdir(__dirname + '/fixtures/swagger');
       src = fs.readFileSync('spec.yaml', 'utf8');
       swaggerFixture = yaml.load(src, { schema: yamlinc.YAML_INCLUDE_SCHEMA });
+
+      process.chdir(__dirname + '/fixtures/issue4');
+      src = fs.readFileSync('main.yaml', 'utf8');
+      issue4Fixture = yaml.load(src, { schema: yamlinc.YAML_INCLUDE_SCHEMA });
 
     });
 
@@ -132,6 +136,15 @@
       it('should enable modular Swagger 2.0 management', function() {
         var petstore = require('./fixtures/swagger/petstore-swagger');
         swaggerFixture.should.match(petstore);
+      });
+
+    });
+
+    describe('regression tests', function() {
+
+      it('should include files with arrays as arrays', function() {
+        var expected = require('./fixtures/issue4/expected');
+        issue4Fixture.should.match(expected);
       });
 
     });
