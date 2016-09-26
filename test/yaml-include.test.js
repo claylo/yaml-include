@@ -131,7 +131,7 @@
 
       it('should enable modular Swagger 2.0 management', function() {
         var petstore = require('./fixtures/swagger/petstore-swagger');
-        swaggerFixture.should.eql(petstore);
+        swaggerFixture.should.match(petstore);
       });
 
     });

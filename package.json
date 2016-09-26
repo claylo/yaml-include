@@ -4,7 +4,7 @@
   "description": "Custom YAML tag definitions to support modular YAML documents with js-yaml.",
   "main": "index.js",
   "scripts": {
-    "test": "multi='spec=- mocha-lcov-reporter=coverage.lcov html-cov=coverage.html travis-cov=-' mocha -r blanket --reporter mocha-multi",
+    "test": "multi='spec=- mocha-lcov-reporter=coverage.lcov travis-cov=-' mocha -r blanket --reporter mocha-multi",
     "patch-lcov": "sed -e s,/index,index,g -e s,/dir,lib/dir,g -e s,/file,lib/file,g coverage.lcov | tee coverage.lcov",
     "report-coverage": "npm run patch-lcov && cat coverage.lcov | coveralls && cat coverage.lcov | codeclimate",
     "preversion": "npm test",
@@ -29,20 +29,20 @@
   "license": "ISC",
   "dependencies": {
     "debug": "^2.2.0",
-    "js-yaml": "^3.4.2",
-    "lodash.assign": "^3.2.0",
-    "lodash.isarray": "^3.0.4",
-    "lodash.merge": "^3.3.2",
+    "js-yaml": "^3.6.1",
+    "lodash.assign": "^4.2.0",
+    "lodash.isarray": "^4.0.0",
+    "lodash.merge": "^4.6.0",
     "recursive-readdir-sync": "^1.0.6"
   },
   "devDependencies": {
     "blanket": "^1.1.7",
-    "codeclimate-test-reporter": "0.1.1",
+    "codeclimate-test-reporter": "0.3.3",
     "coveralls": "^2.11.2",
-    "mocha": "^2.2.5",
-    "mocha-lcov-reporter": "1.0.0",
-    "mocha-multi": "^0.7.1",
-    "should": "^7.1.0",
+    "mocha": "^3.0.2",
+    "mocha-lcov-reporter": "1.2.0",
+    "mocha-multi": "^0.9.1",
+    "should": "^11.1.0",
     "travis-cov": "^0.2.5"
   },
   "config": {
