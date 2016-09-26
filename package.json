@@ -45,6 +45,9 @@
     "should": "^11.1.0",
     "travis-cov": "^0.2.5"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "config": {
     "blanket": {
       "pattern": [
