@@ -4,9 +4,8 @@
   "description": "Custom YAML tag definitions to support modular YAML documents with js-yaml.",
   "main": "index.js",
   "scripts": {
-    "test": "multi='spec=- mocha-lcov-reporter=coverage.lcov travis-cov=-' mocha -r blanket --reporter mocha-multi",
-    "patch-lcov": "sed -e s,/index,index,g -e s,/dir,lib/dir,g -e s,/file,lib/file,g coverage.lcov | tee coverage.lcov",
-    "report-coverage": "npm run patch-lcov && cat coverage.lcov | coveralls && cat coverage.lcov | codeclimate",
+    "test": "nyc ava test/test-* --verbose",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=text-lcov | codeclimate-test-reporter",
     "preversion": "npm test",
     "postversion": "git push && git push --tags"
   },
@@ -15,7 +14,8 @@
     "include",
     "modular",
     "js-yaml",
-    "js-yaml-tag"
+    "js-yaml-tag",
+    "oapi"
   ],
   "repository": {
     "type": "git",
@@ -34,31 +34,17 @@
     "recursive-readdir-sync": "^1.0.6"
   },
   "devDependencies": {
-    "blanket": "^1.1.7",
-    "codeclimate-test-reporter": "0.3.3",
+    "ava": "^0.16.0",
+    "codeclimate-test-reporter": "^0.4.0",
     "coveralls": "^2.11.2",
-    "mocha": "^3.0.2",
     "mocha-lcov-reporter": "1.2.0",
-    "mocha-multi": "^0.9.1",
-    "should": "^11.1.0",
+    "nyc": "^8.3.0",
     "travis-cov": "^0.2.5"
   },
   "engines": {
     "node": ">=4"
   },
   "config": {
-    "blanket": {
-      "pattern": [
-        "index.js",
-        "lib"
-      ],
-      "data-cover-never": [
-        "node_modules"
-      ],
-      "data-cover-reporter-options": {
-        "shortnames": true
-      }
-    },
     "travis-cov": {
       "threshold": 90
     }

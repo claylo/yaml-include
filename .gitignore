@@ -28,3 +28,5 @@ coverage.html
 
 .coveralls.yml
 coverage.lcov
+.nyc_output/
+scratch
