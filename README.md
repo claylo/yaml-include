@@ -25,14 +25,14 @@ A very small script can be created to leverage the `yaml-include` tags. The scri
 var yaml = require('js-yaml');
 var yamlinc = require('yaml-include');
 var fs = require('fs');
+var p = require('path');
 
-// move to the top level of the base yaml document
-// if necessary
-process.chdir(__dirname + '/yaml-dir');
+// set the base file for relative includes
+yamlinc.setBaseFile(p.join(__dirname, 'yaml-dir', 'base.yaml'));
 
-var src = fs.readFileSync('base.yaml', 'utf8');
+var src = fs.readFileSync(yamlinc.basefile, 'utf8');
 
-var obj = yaml.load(src, { schema: yamlinc.YAML_INCLUDE_SCHEMA });
+var obj = yaml.load(src, { schema: yamlinc.YAML_INCLUDE_SCHEMA, filename: yamlinc.basefile });
 
 // use your loaded object!
 ```
