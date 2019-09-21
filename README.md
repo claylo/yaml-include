@@ -142,4 +142,4 @@ NOTE: Files are permitted to include other files or directories. Just make sure 
 
 ## License
 
-View the [LICENSE](claylo/yaml-include/LICENSE) file (ISC).
+View the [LICENSE](LICENSE) file (ISC).
