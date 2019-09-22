@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc ava test/test-* --verbose",
-    "report-coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=text-lcov | codeclimate-test-reporter",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=text-lcov",
     "preversion": "npm test",
     "postversion": "git push && git push --tags"
   },
@@ -28,25 +28,17 @@
   "author": "claylo",
   "license": "ISC",
   "dependencies": {
-    "debug": "^2.2.0",
-    "js-yaml": "^3.6.1",
-    "lodash.merge": "^4.6.0",
+    "debug": "^2.6.9",
+    "js-yaml": "^3.13.1",
+    "lodash.merge": "^4.6.2",
     "recursive-readdir-sync": "^1.0.6"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "codeclimate-test-reporter": "^0.4.0",
-    "coveralls": "^2.11.2",
-    "mocha-lcov-reporter": "1.2.0",
-    "nyc": "^8.3.0",
-    "travis-cov": "^0.2.5"
+    "ava": "2.4.0",
+    "coveralls": "^3.0.6",
+    "nyc": "^14.1.1"
   },
   "engines": {
     "node": ">=4"
-  },
-  "config": {
-    "travis-cov": {
-      "threshold": 90
-    }
   }
 }
