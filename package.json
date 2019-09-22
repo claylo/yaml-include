@@ -28,7 +28,7 @@
   "author": "claylo",
   "license": "ISC",
   "dependencies": {
-    "debug": "^2.6.9",
+    "debug": "^4.1.1",
     "js-yaml": "^3.13.1",
     "lodash.merge": "^4.6.2",
     "recursive-readdir-sync": "^1.0.6"
