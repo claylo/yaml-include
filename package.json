@@ -1,25 +1,25 @@
 {
   "name": "yaml-include",
-  "version": "1.2.0",
+  "version": "0.0.0-development",
   "description": "Custom YAML tag definitions to support modular YAML documents with js-yaml.",
   "main": "index.js",
   "scripts": {
     "test": "nyc ava test/test-* --verbose",
     "report-coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=text-lcov",
-    "preversion": "npm test",
-    "postversion": "git push && git push --tags"
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "semantic-commit": "commit",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "yaml",
     "include",
     "modular",
     "js-yaml",
-    "js-yaml-tag",
-    "oapi"
+    "js-yaml-tag"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/claylo/yaml-include.git"
+    "url": "https://github.com/claylo/yaml-include.git"
   },
   "bugs": {
     "url": "https://github.com/claylo/yaml-include/issues"
@@ -34,9 +34,13 @@
     "recursive-readdir-sync": "^1.0.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-angular": "^8.2.0",
+    "@commitlint/prompt-cli": "^8.2.0",
     "ava": "2.4.0",
     "coveralls": "^3.0.6",
-    "nyc": "^14.1.1"
+    "nyc": "^14.1.1",
+    "semantic-release": "^15.13.24"
   },
   "engines": {
     "node": ">=4"
