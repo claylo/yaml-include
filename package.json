@@ -7,8 +7,7 @@
     "test": "nyc ava test/test-* --verbose",
     "report-coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=text-lcov",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "semantic-commit": "commit",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-commit": "commit"
   },
   "keywords": [
     "yaml",
