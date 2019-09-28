@@ -1,5 +1,22 @@
 sudo: false
 language: node_js
+cache:
+  directories:
+    - ~/.npm
+
 node_js:
   - 10
-after_success: npm run report-coverage
+  - 8
+
+install: npm install
+
+jobs:
+  include:
+    - stage: release
+      if: branch = master
+      node_js: 10
+      deply:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm run semantic-release
