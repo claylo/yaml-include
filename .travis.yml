@@ -15,7 +15,7 @@ jobs:
     - stage: release
       if: branch = master
       node_js: 10
-      deply:
+      deploy:
         provider: script
         skip_cleanup: true
         script:
