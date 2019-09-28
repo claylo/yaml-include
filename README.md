@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/claylo/yaml-include/badge.svg)](https://coveralls.io/r/claylo/yaml-include)
 [![Dependency Status](https://david-dm.org/claylo/yaml-include.svg)](https://david-dm.org/claylo/yaml-include)
 [![devDependency Status](https://david-dm.org/claylo/yaml-include/dev-status.svg)](https://david-dm.org/claylo/yaml-include#info=devDependencies)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Greenkeeper badge](https://badges.greenkeeper.io/claylo/yaml-include.svg)](https://greenkeeper.io/)
 
 
 
