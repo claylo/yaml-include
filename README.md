@@ -118,6 +118,7 @@ options:
 
 - `allowEmpty` _(default: false)_ - allow an empty file to appear in the generated result. When set to true, an empty file named `empty.yaml` will be represented as `empty: {}`.
 - `recursive` _(default: true)_ - Specifies whether or not to recurse into subdirectories.
+- `excludeFileNameFromNode` _(default: false)_ - If true, it will not create an additional node in the object with the file name included.
 - `extensions` _(default: ['.yaml', '.yml'])_ - Determines file extensions to consider for inclusion.
 - `lowerKeys` _(default: false)_ - Force all keys gleaned from the directory hierarchy to lower case.
 - `variableIndicator` _(default: '~')_ - When a file or directory name is prefixed with this character, the representation in the generated output will be wrapped in the `variablePrefix` and `variableSuffix` strings.
