@@ -39,7 +39,7 @@
     "ava": "2.4.0",
     "coveralls": "^3.0.6",
     "nyc": "^14.1.1",
-    "semantic-release": "^15.13.24"
+    "semantic-release": "^17.0.0"
   },
   "engines": {
     "node": ">=4"
